@@ -29,8 +29,8 @@ export class ProjectItem extends Component<HTMLUListElement, HTMLLIElement> impl
     event.dataTransfer!.effectAllowed = 'move'
   }
 
-  dragEndHandler(event: DragEvent) {
-    console.log(event, 'dragEnd')
+  dragEndHandler(_: DragEvent) {
+    console.log('dragEnd')
   }
 
   configure() {
